@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: todos-tomcat
+  labels:
+    app: todos-tomcat
+spec:
+  type: NodePort
+  ports:
+  - port: 88	# Service port number
+    targetPort: 8080	# Port number exposed by the container
+    nodePort: 30007	# The real port number of the node
+  selector:
+    app: mytodos
