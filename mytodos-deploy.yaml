@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: todos-tomcat
+  labels:
+    app: todos-tomcat
+spec:
+  type: NodePort
+  ports:
+  - port: 88	# Service port number
+    targetPort: 8080	# Port number exposed by the container
+    nodePort: 30007	# The real port number of the node
+  selector:
+    app: mytodos
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mytodos-deployment
+spec:
+  selector:
+    matchLabels:
+      app: mytodos
+  template:
+    metadata:
+      labels:
+        app: mytodos
+    spec:
+      containers:
+      - name: mytodos-container
+        image: richizana/mytodos:1.0
+        ports:
+        - containerPort: 8888
+        
