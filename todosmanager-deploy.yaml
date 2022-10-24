@@ -6,6 +6,8 @@ metadata:
     app: manager-tomcat
 spec:
   type: LoadBalancer
+  externalIPs:
+   - 15.161.131.9
   ports:
   - port: 80 	# Service port number
     targetPort: 8080 	# Port number exposed by the container
