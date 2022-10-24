@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - image: richizana/todosmanager:1.0
-	imagePullPolicy: Always
+        imagePullPolicy: Always
         name: manager-container
         ports:
         - containerPort: 8080
