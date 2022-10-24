@@ -29,7 +29,7 @@ spec:
         app: manager
     spec:
       containers:
-      - image: richizana/todosmanager:1.0
+      - image: richizana/todosmanager:2.0
         name: manager-container
         ports:
         - containerPort: 8080
