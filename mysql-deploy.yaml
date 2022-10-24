@@ -3,7 +3,9 @@ kind: Service
 metadata:
   name: mysql
 spec:
-  type: NodePort
+  type: LoadBalancer
+  externalIPs:
+   - 15.161.131.9
   ports:
   - port: 3306
     nodePort: 31563	# The real port number of the node
