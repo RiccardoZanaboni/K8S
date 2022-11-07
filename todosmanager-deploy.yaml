@@ -5,9 +5,7 @@ metadata:
   labels:
     app: manager-tomcat
 spec:
-  type: LoadBalancer
-  externalIPs:
-   - 15.161.131.9
+  type: ClusterIp
   ports:
   - port: 80 	# Service port number
     targetPort: 8080 	# Port number exposed by the container
@@ -29,7 +27,7 @@ spec:
         app: manager
     spec:
       containers:
-      - image: richizana/todosmanag:1.0
+      - image: richizana/todosmanager:1.0
         name: manager-container
         ports:
         - containerPort: 8080
