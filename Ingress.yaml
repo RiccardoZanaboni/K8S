@@ -19,7 +19,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: todos-manager
+            name: manager-tomcat
             port:
               number: 80
       - path: /
