@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: 15.160.115.212
+  - host: ec2-15-160-220-180.eu-south-1.compute.amazonaws.com
     http:
       paths:
       - path: /
