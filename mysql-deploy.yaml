@@ -7,7 +7,7 @@ spec:
   type: ClusterIP
   ports:
   - port: 3306
-    nodePort: 31563	# The real port number of the node
+    targetPort: 31563	# The real port number of the node
   selector:
     app: mysql
 ---
