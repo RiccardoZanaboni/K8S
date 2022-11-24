@@ -6,7 +6,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: ec2-15-160-115-182.eu-south-1.compute.amazonaws.com
+  - host: ec2-15-160-176-232.eu-south-1.compute.amazonaws.com
     http:
       paths:
       - path: /
