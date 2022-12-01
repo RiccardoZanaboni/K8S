@@ -5,7 +5,7 @@ metadata:
   labels:
     app: todos-tomcat
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
   - port: 88	# Service port number
     targetPort: 8080	# Port number exposed by the container
