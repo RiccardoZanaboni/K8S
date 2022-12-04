@@ -4,7 +4,9 @@ metadata:
   name: mysql
   namespace: default
 spec:
-  type: NodePort
+  type: LoadBalancer
+  externalIPs:
+  - 15.160.149.6
   ports:
   - port: 3306
     targetPort: 31563	# The real port number of the node
