@@ -9,7 +9,7 @@ spec:
   - 15.160.169.124
   ports:
   - port: 3306
-    targetPort: 30758	# The real port number of the node
+    targetPort: 3306	# The real port number of the node
   selector:
     app: mysql
 ---
