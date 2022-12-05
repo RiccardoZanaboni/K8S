@@ -9,8 +9,7 @@ spec:
   - 15.160.169.124
   ports:
   - port: 3306
-    targetPort: 3306	# Port number exposed by the container
-    nodePort: 31563	# The real port number of the node
+    nodePort: 31563
   selector:
     app: mysql
 ---
