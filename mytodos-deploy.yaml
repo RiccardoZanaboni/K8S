@@ -10,7 +10,7 @@ spec:
   - 15.160.169.124
   ports:
   - port: 88	# Service port number
-    targetPort: 8888	# Port number exposed by the container
+    targetPort: 8080	# Port number exposed by the container
   selector:
     app: mytodos
 ---
