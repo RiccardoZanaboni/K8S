@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: mytodos-container
-        image: richizana/mytodos:1.0
+        image: richizana/mytodos:latest
         ports:
         - containerPort: 8888
         
