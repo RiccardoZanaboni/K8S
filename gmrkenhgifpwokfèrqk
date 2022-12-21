@@ -1,0 +1,261 @@
+[33mcommit b4a22035ac980d95d45b7e314d592b06e8c08485[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Wed Dec 21 12:10:24 2022 +0100
+
+    Delete polimi@webratio.com.ppk
+
+[33mcommit 0702b66173292d7e0bf9b08f861fbdd1d5452d73[m
+Author: RiccardoZanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Wed Dec 21 12:08:50 2022 +0100
+
+    First example
+
+[33mcommit da5ab2e2604b98031e7f7d226c6e93e723965bd8[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Wed Dec 14 10:28:05 2022 +0100
+
+    Update todosmanager-deploy.yaml
+
+[33mcommit d0f12fc47da622792606fe86efd5c917545f47c4[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Wed Dec 14 10:27:59 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit ee7c6b9eda4a402a92ba44d78d73e7e1cc270e2b[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Wed Dec 14 10:27:53 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit 979b70a83ee31ad5bd028b72856431d119ea3356[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 12 23:39:54 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit 94b48315c4d132984bb09a8d924020aaaf2deab0[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 12 23:39:48 2022 +0100
+
+    Update todosmanager-deploy.yaml
+
+[33mcommit d20d62a17afde4f74aadcec60e723d3cc6d4bb3c[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 12 23:39:42 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit d70fc59fd0fbf539085382478feeebc560a03cda[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Tue Dec 6 10:02:15 2022 +0100
+
+    Update todosmanager-deploy.yaml
+
+[33mcommit c11a36afe953b5e44c44200d3b77011723d417c0[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Tue Dec 6 10:02:11 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit d568b20e69aaccbb66023861e09d9b00e8134328[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Tue Dec 6 10:02:02 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit b29621406974fa003946a02e13aefe75ee04eb30[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Tue Dec 6 09:58:32 2022 +0100
+
+    Update todosmanager-deploy.yaml
+
+[33mcommit 2bd7622affbaf99cce043915df1e9ff45cc0578b[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Tue Dec 6 09:58:26 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit 49aa40470264281486e8a450b83dce8b0bc88a09[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Tue Dec 6 09:58:19 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit b7df85dcea8901fb915132d599da8861bf545bc4[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 14:48:53 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit 3a1ceb14c81e6a99f2774edec3bfb80601619c20[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 14:43:51 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit 0c3a1f40d3d4112739ca69912960e0bd1a3007d3[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 14:40:38 2022 +0100
+
+    Update todosmanager-deploy.yaml
+
+[33mcommit c3f99ecb071364fc5a1bcd9a9d97008ec6f7f84d[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 14:40:29 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit 6b7d98521753978cd97a25a1ab744d158d03ca0b[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 14:39:41 2022 +0100
+
+    Update todosmanager-deploy.yaml
+
+[33mcommit 6864c968752af559268b4f8ed0660b2ace07526f[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 14:39:17 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit a8776b749656ef8351f5256025dfd8c2778c94f8[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 14:35:08 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit 081553e6252c2c042a6aa9cf2053617fb735b280[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 14:31:26 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit 8906e1464552b48b06aa35de7141ab7120a8180a[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 14:29:13 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit 2b3d0400212326d6be697ee0c0cd922b8b28afe3[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 13:46:44 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit a728b7c9f9fae4bf8c844acb89a3f9f82b1fb273[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 13:45:42 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit 81f847b8dd75c4415703ed0c2d706df869c17cd0[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 12:57:51 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit 80efa68eccc670d4a53f55e9c8506841602f206d[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 12:53:38 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit e864f3e6db465b66864a0a5592419d1e14aa1c3a[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 12:53:20 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit a85a5b9598f8dababd6313af2c0fb90d048cff93[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 12:53:07 2022 +0100
+
+    Update todosmanager-deploy.yaml
+
+[33mcommit 1f3abc926f6872b3f39c26cdd67a28d57e03b1dc[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 12:53:02 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit 7523c8eef9a94bcf74fb259e831cab285f4b546c[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Mon Dec 5 01:04:41 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit 5cfeffb76a789cd88f7063560740b5f644ece55d[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Sun Dec 4 23:10:25 2022 +0100
+
+    Update mysql-deploy.yaml
+
+[33mcommit 7407896135d488f86c9b4872326e5b74d5f5eca2[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Sun Dec 4 23:10:23 2022 +0100
+
+    Update mytodos-deploy.yaml
+
+[33mcommit d61c5deecc6de5c96c7c5bcf879604e0e27c7238[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Sun Dec 4 23:10:21 2022 +0100
+
+    Update todosmanager-deploy.yaml
+
+[33mcommit a6a708dd5d5170d9322eb11a0def7c664ec6fd96[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Thu Dec 1 23:54:35 2022 +0100
+
+    Update Ingress.yaml
+
+[33mcommit 78fea7c8b010c90ebae246f072b78d1b30814584[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Thu Dec 1 23:52:45 2022 +0100
+
+    Update Ingress.yaml
+
+[33mcommit 26ce0102f004d07df5d2e79f69bf529cd1270f69[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Thu Dec 1 23:51:52 2022 +0100
+
+    Update Ingress.yaml
+
+[33mcommit e0097b54c2e9bb0d7019f306ebbdf5a1464d8a89[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Thu Dec 1 23:50:57 2022 +0100
+
+    Create controller.yaml
+
+[33mcommit 842604ab5aaa034e1e6fbecc35dc55d7f91f9269[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Thu Dec 1 23:50:35 2022 +0100
+
+    Delete ingress-nginx/controller-v1.5.1/deploy/static/provider/aws directory
+
+[33mcommit 57305beee158b81398bccf022c195646139307a4[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Thu Dec 1 18:28:17 2022 +0100
+
+    Update deploy.yaml
+
+[33mcommit f5751cfcbd2a6d36b9c6b92a28653f02cf8bbfcb[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Thu Dec 1 17:39:55 2022 +0100
+
+    Update deploy.yaml
+
+[33mcommit eab2ad2078fce1f7579688150727573fb058aa8d[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Thu Dec 1 14:20:40 2022 +0100
+
+    Update deploy.yaml
+
+[33mcommit 3ded0f7c472c42d884a4a4be9e772cd11fcb3809[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date:   Thu Dec 1 14:19:32 2022 +0100
+
+    Create deploy.yaml
+
+[33mcommit 78bffddd704ddb3a615ac5551ed4f2ce1802bc89[m
+Author: Riccardo Zanaboni <riccardo.zanaboni23@gmail.com>
+Date
