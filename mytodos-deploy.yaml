@@ -33,4 +33,3 @@ spec:
         image: richizana/mytodos:1.0
         ports:
         - containerPort: 8888
-        
