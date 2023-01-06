@@ -15,4 +15,21 @@ spec:
 	selector:
 	  app: mytodos
 ---
-    apiVersion: apps/v1    kind: Deployment    metadata:      name: mytodos-deployment    spec:      selector:        matchLabels:          app: mytodos      template:        metadata:          labels:            app: mytodos        spec:          containers:          - name: mytodos-container            image: richizana/mytodos:latest            ports:            - containerPort: 8888
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+	name: mytodos-deployment
+spec:
+	selector:
+	  matchLabels:
+	    app: mytodos
+	template:
+	  metadata:
+	    labels:
+	      app: mytodos
+	  spec:
+	    containers:
+	    - name: mytodos-container
+	      image: richizana/mytodos:latest
+	      ports:
+	      - containerPort: 8888
