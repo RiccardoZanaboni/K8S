@@ -35,4 +35,13 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           value: manager
         - name: MYSQL_PASSWORD
-          value: manager{line.separator}        - name: MYSQL_USER{line.separator}          value: manager{line.separator}        - name: MYSQL_DATABASE{line.separator}          value: todos{line.separator}        ports:{line.separator}        - containerPort: 3306{line.separator}          name: mysql{line.separator}        volumeMounts:{line.separator}        - name: mysql-persistent-storage{line.separator}          mountPath: /var/lib/mysql{line.separator}      volumes:{line.separator}      - name: mysql-persistent-storage{line.separator}        persistentVolumeClaim:{line.separator}          claimName: mysql-pv-claim
+          value: manager{line.separator}        - name: MYSQL_USER{line.separator}          value: manager{line.separator}        - name: MYSQL_DATABASE{line.separator}          value: todos
+        ports:
+        - containerPort: 3306
+          name: mysql
+        volumeMounts:
+        - name: mysql-persistent-storage{line.separator}          mountPath: /var/lib/mysql
+      volumes:
+      - name: mysql-persistent-storage
+        persistentVolumeClaim:
+          claimName: mysql-pv-claim

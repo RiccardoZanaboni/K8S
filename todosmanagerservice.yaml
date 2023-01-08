@@ -26,10 +26,10 @@ spec:
   template:
     metadata:
       labels:
-      app: todosmanagerservice
-  spec:
-    containers:
-    - image: richizana/todosmanagerservice-services:latest
-      name: todosmanagerservice-container
-      ports:
-      - containerPort: 8080
+        app: todosmanagerservice
+    spec:
+      containers:
+      - image: richizana/todosmanagerservice-services:latest
+        name: todosmanagerservice-container
+        ports:
+        - containerPort: 8080
