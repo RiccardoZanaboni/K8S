@@ -21,11 +21,11 @@ spec:
   selector:
     matchLabels:
       app: mysql
-    strategy:
+  strategy:
     type: Recreate
   template:
     metadata:
-    labels:
+      labels:
         app: mysql
     spec:
       containers:
