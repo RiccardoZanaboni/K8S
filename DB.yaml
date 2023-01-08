@@ -35,12 +35,17 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           value: manager
         - name: MYSQL_PASSWORD
-          value: manager{line.separator}        - name: MYSQL_USER{line.separator}          value: manager{line.separator}        - name: MYSQL_DATABASE{line.separator}          value: todos
+          value: manager
+        - name: MYSQL_USER
+          value: manager
+        - name: MYSQL_DATABASE
+          value: todos
         ports:
         - containerPort: 3306
           name: mysql
         volumeMounts:
-        - name: mysql-persistent-storage{line.separator}          mountPath: /var/lib/mysql
+        - name: mysql-persistent-storage
+          mountPath: /var/lib/mysql
       volumes:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
