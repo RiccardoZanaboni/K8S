@@ -9,5 +9,7 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: todosmanagerservice #obviously point this to a valid service + port
-          servicePort: 80
+          service:
+            name: todosmanagerservice
+            port:
+              number: 80
