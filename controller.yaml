@@ -13,10 +13,5 @@ spec:
     nodePort: 32080
     protocol: TCP
     name: http
-  - port: 443
-    targetPort: 443
-    nodePort: 32443
-    protocol: TCP
-    name: https
   selector:
     k8s-app: nginx-ingress-controller
