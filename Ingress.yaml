@@ -4,7 +4,7 @@ metadata:
   name: my-ingress
 spec:
   rules:
-  - host: ec2-15-160-122-197.eu-south-1.compute.amazonaws.com
+  - host: ec2-15-161-175-169.eu-south-1.compute.amazonaws.com
     http:
       paths:
       - path: /
@@ -18,7 +18,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: manager-tomcat
+            name: todosmanagerservice
             port:
               number: 80
       - path: /
