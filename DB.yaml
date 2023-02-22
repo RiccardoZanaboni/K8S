@@ -4,7 +4,9 @@ metadata:
   name: mysql
   namespace: default
 spec:
-  type: NodePort
+  type: LoadBalancer
+  externalIPs:
+  - ${worker_ip}
   ports:
   - port: 3306
     nodePort: 31563
@@ -27,7 +29,7 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: richizana/todosmanagerservice-db
+      - image: richizana/${project_name}-db
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
