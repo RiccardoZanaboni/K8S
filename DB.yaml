@@ -29,7 +29,7 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: richizana/todosmanagerservice-db
+      - image: richizana/${project_name}-db
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
