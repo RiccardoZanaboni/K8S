@@ -7,7 +7,8 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 15.161.13.193{line.separator}  ports:
+  - 15.161.13.193
+  ports:
   - port: 88 # Service port number
     targetPort: 8080 # Port number exposed by the container
     nodePort: 32227 # The real port number of the node
