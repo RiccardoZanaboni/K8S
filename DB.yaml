@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 15.161.26.56
+  - 35.152.38.254
   ports:
   - port: 3306
     nodePort: 31563
@@ -29,7 +29,7 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: richizana/todosmanagerservice-db
+      - image: richizana/customersdata-db
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
