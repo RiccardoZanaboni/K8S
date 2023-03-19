@@ -7,7 +7,7 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 18.102.120.171
+  - 15.161.213.49
   ports:
   - port: 80  # Service port number
     targetPort: 8080  # Port number exposed by the container
