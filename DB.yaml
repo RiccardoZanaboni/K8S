@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 18.102.107.71
+  - 18.102.121.37
   ports:
   - port: 3306
     nodePort: 31563
@@ -33,13 +33,13 @@ spec:
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
-          value: ${root_psw}
+          value: cm9vdHBhc3N3b3Jk
         - name: MYSQL_PASSWORD
-          value: ${psw}
+          value: cm9vdHBhc3N3b3Jk
         - name: MYSQL_USER
-          value: ${user}
+          value: manager
         - name: MYSQL_DATABASE
-          value: ${db}
+          value: contracts
         ports:
         - containerPort: 3306
           name: mysql
