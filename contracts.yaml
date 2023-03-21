@@ -29,7 +29,7 @@ spec:
         app: contracts
     spec:
       containers:
-      - name: mytodos-container
+      - name: contracts-container
         image: richizana/contracts:latest
         ports:
         - containerPort: 8888
