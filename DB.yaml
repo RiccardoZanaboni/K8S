@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 18.102.78.188
+  - 15.161.195.110
   ports:
   - port: 3306
     nodePort: 31563
