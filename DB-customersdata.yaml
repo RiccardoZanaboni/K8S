@@ -1,0 +1,52 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-customersdata
+  namespace: default
+spec:
+  type: LoadBalancer
+  externalIPs:
+  - 18.102.110.22
+  ports:
+  - port: 3306
+    nodePort: 31563
+  selector:
+    app: mysql-customersdata
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-customersdata
+spec:
+  selector:
+    matchLabels:
+      app: mysql-customersdata
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: mysql-customersdata
+    spec:
+      containers:
+      - image: richizana/customersdata-db
+        name: mysql-customersdata
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: cm9vdHBhc3N3b3Jk
+        - name: MYSQL_PASSWORD
+          value: cm9vdHBhc3N3b3Jk
+        - name: MYSQL_USER
+          value: user
+        - name: MYSQL_DATABASE
+          value: contracts
+        ports:
+        - containerPort: 3306
+          name: mysql
+        volumeMounts:
+        - name: mysql--customersdata-persistent-storage
+          mountPath: /var/lib/mysql
+      volumes:
+      - name: mysql-customersdata-persistent-storage
+        persistentVolumeClaim:
+          claimName: mysql-customersdata-pv-claim
