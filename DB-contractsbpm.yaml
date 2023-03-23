@@ -42,7 +42,7 @@ spec:
           value: bpmengine
         ports:
         - containerPort: 3306
-          name: mysql-contractsbpm
+          name: mysql
         volumeMounts:
         - name: mysql-contractsbpm-persistent-storage
           mountPath: /var/lib/mysql-contractsbpm
