@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 18.102.84.229
+  - 18.102.117.49
   ports:
   - port: 3306
     nodePort: 31562
@@ -37,7 +37,7 @@ spec:
         - name: MYSQL_PASSWORD
           value: rootpassword
         - name: MYSQL_USER
-          value: root
+          value: USER
         - name: MYSQL_DATABASE
           value: bpmengine
         ports:
