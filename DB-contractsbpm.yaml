@@ -1,22 +1,22 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysql
+  name: mysql-contractsbpm
   namespace: default
 spec:
   type: LoadBalancer
   externalIPs:
-  - 18.102.45.41
+  - 35.152.65.192
   ports:
   - port: 3306
     nodePort: 31562
   selector:
-    app: mysql
+    app: mysql-contractsbpm
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql
+  name: mysql-contractsbpm
 spec:
   selector:
     matchLabels:
@@ -39,14 +39,14 @@ spec:
         - name: MYSQL_USER
           value: manager
         - name: MYSQL_DATABASE
-          value: contractsBPM
+          value: bpmengine
         ports:
         - containerPort: 3306
-          name: mysql
+          name: mysql-contractsbpm
         volumeMounts:
-        - name: mysql-persistent-storage
-          mountPath: /var/lib/mysql
+        - name: mysql-contractsbpm-persistent-storage
+          mountPath: /var/lib/mysql-contractsbpm
       volumes:
-      - name: mysql-persistent-storage
+      - name: mysql-contractsbpm-persistent-storage
         persistentVolumeClaim:
-          claimName: mysql-pv-claim
+          claimName: mysql-contractsbpm-pv-claim
