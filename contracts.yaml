@@ -7,11 +7,11 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 15.161.250.141
+  - 18.102.123.83
   ports:
   - port: 88 # Service port number
     targetPort: 8080 # Port number exposed by the container
-    nodePort: ECHO attivo.   # The real port number of the node
+    nodePort: 31117   # The real port number of the node
   selector:
     app: contracts-service
 ---
