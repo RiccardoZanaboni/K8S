@@ -11,7 +11,7 @@ spec:
   ports:
   - port: 88 # Service port number
     targetPort: 8080 # Port number exposed by the container
-    nodePort: 15.160.149.192   # The real port number of the node
+    nodePort: 31117    # The real port number of the node
   selector:
     app: contracts-service
 ---
