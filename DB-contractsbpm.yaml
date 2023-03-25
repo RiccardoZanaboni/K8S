@@ -6,10 +6,10 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 18.102.117.49
+  - 18.102.106.12
   ports:
   - port: 3306
-    nodePort: 31562
+    nodePort: ${portDB}
   selector:
     app: mysql-contractsbpm
 ---
@@ -20,24 +20,24 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: mysql
+      app: mysql-contractsbpm
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: mysql
+        app: mysql-contractsbpm
     spec:
       containers:
       - image: richizana/contractsbpm-db
-        name: mysql
+        name: mysql-contractsbpm
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: rootpassword
         - name: MYSQL_PASSWORD
           value: rootpassword
         - name: MYSQL_USER
-          value: USER
+          value: user
         - name: MYSQL_DATABASE
           value: bpmengine
         ports:
@@ -45,7 +45,7 @@ spec:
           name: mysql
         volumeMounts:
         - name: mysql-contractsbpm-persistent-storage
-          mountPath: /var/lib/mysql-contractsbpm
+          mountPath: /var/lib/mysql
       volumes:
       - name: mysql-contractsbpm-persistent-storage
         persistentVolumeClaim:
