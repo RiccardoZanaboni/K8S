@@ -11,7 +11,7 @@ spec:
   ports:
   - port: 80  # Service port number
     targetPort: 8080  # Port number exposed by the container
-    nodePort: 31118  # The real port number of the node
+    nodePort: 31118 # The real port number of the node
   selector:
     app: contractsbpm-service
 ---
