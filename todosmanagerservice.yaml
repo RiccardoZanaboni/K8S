@@ -7,9 +7,9 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 18.102.105.245
+  - 18.102.128.236
   ports:
-  - port: 88 # Service port number
+  - port: 80 # Service port number
     targetPort: 8080 # Port number exposed by the container
     nodePort: 31117 # The real port number of the node
   selector:
@@ -32,4 +32,4 @@ spec:
       - name: todosmanagerservice-container
         image: richizana/todosmanagerservice-services:latest
         ports:
-        - containerPort: 8888
+        - containerPort: 8080
