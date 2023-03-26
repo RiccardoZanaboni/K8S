@@ -1,0 +1,52 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-contractsbpm
+  namespace: default
+spec:
+  type: LoadBalancer
+  externalIPs:
+  - 18.102.31.131
+  ports:
+  - port: 3306
+    nodePort: 31566
+  selector:
+    app: mysql-contractsbpm
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-contractsbpm
+spec:
+  selector:
+    matchLabels:
+      app: mysql-contractsbpm
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: mysql-contractsbpm
+    spec:
+      containers:
+      - image: richizana/contractsbpm-db
+        name: mysql-contractsbpm
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: rootpassword
+        - name: MYSQL_PASSWORD
+          value: rootpassword
+        - name: MYSQL_USER
+          value: user
+        - name: MYSQL_DATABASE
+          value: bpmengine
+        ports:
+        - containerPort: 3306
+          name: mysql
+        volumeMounts:
+        - name: mysql-contractsbpm-persistent-storage
+          mountPath: /var/lib/mysql-contractsbpm{
+      volumes:
+      - name: mysql-contractsbpm-persistent-storage
+        persistentVolumeClaim:
+          claimName: mysql-contractsbpm-pv-claim
