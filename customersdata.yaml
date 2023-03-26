@@ -7,11 +7,11 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 18.102.128.236
+  - 18.102.38.31
   ports:
-  - port: 88 # Service port number
+  - port: 80 # Service port number
     targetPort: 8080 # Port number exposed by the container
-    nodePort: 31119 # The real port number of the node
+    nodePort: 31117 # The real port number of the node
   selector:
     app: customersdata-service
 ---
@@ -30,6 +30,6 @@ spec:
     spec:
       containers:
       - name: customersdata-container
-        image: richizana/customersdata:latest
+        image: richizana/customersdata-services:latest
         ports:
-        - containerPort: 8888
+        - containerPort: 8080
