@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mytodos-service
+  labels:
+    app: mytodos-service
+spec:
+  type: LoadBalancer
+  externalIPs:
+  - 18.102.33.87
+  ports:
+  - port: 88 # Service port number
+    targetPort: 8080 # Port number exposed by the container
+    nodePort: 31564 # The real port number of the node
+  selector:
+    app: mytodos-service
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mytodos-service-deployment
+spec:
+  selector:
+    matchLabels:
+      app: mytodos-service
+  template:
+    metadata:
+      labels:
+        app: mytodos-service
+    spec:
+      containers:
+      - name: mytodos-container
+        image: richizana/mytodos:latest
+        ports:
+        - containerPort: 8888
