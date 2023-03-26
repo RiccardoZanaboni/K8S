@@ -1,32 +1,32 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mytodos-service
+  name: service-mytodos
   labels:
-    app: mytodos-service
+    app: service-mytodos
 spec:
   type: LoadBalancer
   externalIPs:
-  - 18.102.33.26
+  - 18.102.105.245
   ports:
   - port: 88 # Service port number
     targetPort: 8080 # Port number exposed by the container
-    nodePort: 0 # The real port number of the node
+    nodePort: 31118 # The real port number of the node
   selector:
-    app: mytodos-service
+    app: service-mytodos
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mytodos-service-deployment
+  name: service-mytodos-deployment
 spec:
   selector:
     matchLabels:
-      app: mytodos-service
+      app: service-mytodos
   template:
     metadata:
       labels:
-        app: mytodos-service
+        app: service-mytodos
     spec:
       containers:
       - name: mytodos-container
