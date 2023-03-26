@@ -1,0 +1,52 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-todosmanagerservice
+  namespace: default
+spec:
+  type: LoadBalancer
+  externalIPs:
+  - 35.152.35.204
+  ports:
+  - port: 3306
+    nodePort: 31563
+  selector:
+    app: mysql-todosmanagerservice
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-todosmanagerservice
+spec:
+  selector:
+    matchLabels:
+      app: mysql-todosmanagerservice
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: mysql-todosmanagerservice
+    spec:
+      containers:
+      - image: richizana/todosmanagerservice-db
+        name: mysql-todosmanagerservice
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: manager
+        - name: MYSQL_PASSWORD
+          value: manager
+        - name: MYSQL_USER
+          value: manager
+        - name: MYSQL_DATABASE
+          value: todos
+        ports:
+        - containerPort: 3306
+          name: mysql
+        volumeMounts:
+        - name: mysql-todosmanagerservice-persistent-storage
+          mountPath: /var/lib/mysql-todosmanagerservice
+      volumes:
+      - name: mysql-todosmanagerservice-persistent-storage
+        persistentVolumeClaim:
+          claimName: mysql-todosmanagerservice-pv-claim
