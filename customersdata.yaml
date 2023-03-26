@@ -11,7 +11,7 @@ spec:
   ports:
   - port: 80 # Service port number
     targetPort: 8080 # Port number exposed by the container
-    nodePort: {port} # The real port number of the node
+    nodePort: 31119 # The real port number of the node
   selector:
     app: customersdata-service
 ---
