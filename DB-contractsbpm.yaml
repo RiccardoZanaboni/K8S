@@ -6,10 +6,10 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 18.102.31.131
+  - 15.161.28.60
   ports:
   - port: 3306
-    nodePort: 31566
+    nodePort: 31565
   selector:
     app: mysql-contractsbpm
 ---
