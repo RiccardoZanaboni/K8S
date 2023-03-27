@@ -9,7 +9,7 @@ spec:
   - 18.102.53.85
   ports:
   - port: 3306
-    nodePort: 31564
+    nodePort: 31565
   selector:
     app: mysql-contractsbpm
 ---
