@@ -28,3 +28,17 @@ spec:
             name: ContractsBPM
             port:
               number: 3306
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: DB-ContractsBPM
+            port:
+              number: 31563
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: DB-CustomerData
+            port:
+              number: 31564
