@@ -11,6 +11,20 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: todosmanagerservice
+            name: CustomerData
+            port:
+              number: 88
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: Contracts
             port:
               number: 80
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: ContractsBPM
+            port:
+              number: 3306
