@@ -6,10 +6,10 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 35.152.44.19
+  - 35.152.40.1
   ports:
   - port: 3306
-    nodePort: 31563
+    nodePort: 31565
   selector:
     app: mysql-todosmanagerservice
 ---
@@ -45,7 +45,7 @@ spec:
           name: mysql
         volumeMounts:
         - name: mysql-todosmanagerservice-persistent-storage
-          mountPath: /var/lib/mysql-todosmanagerservice
+          mountPath: /var/lib/mysql-todosmanagerservice{
       volumes:
       - name: mysql-todosmanagerservice-persistent-storage
         persistentVolumeClaim:
