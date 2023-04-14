@@ -28,6 +28,6 @@ spec:
     spec:
       containers:
       - name: todosmanagerservice-container
-        image: richizana/todosmanagerservice-services:latest
+        image: richizana/todosmanagerservice-services:1.0
         ports:
         - containerPort: 8080
