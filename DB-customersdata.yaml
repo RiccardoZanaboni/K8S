@@ -6,10 +6,10 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 18.102.41.131
+  - 18.102.135.144
   ports:
   - port: 3306
-    nodePort: 31564
+    nodePort: 31563
   selector:
     app: mysql-customersdata
 ---
@@ -45,7 +45,7 @@ spec:
           name: mysql
         volumeMounts:
         - name: mysql-customersdata-persistent-storage
-          mountPath: /var/lib/mysql-customersdata{
+          mountPath: /var/lib/mysql-customersdata
       volumes:
       - name: mysql-customersdata-persistent-storage
         persistentVolumeClaim:
